@@ -3147,6 +3147,8 @@ EOF
     # 下载 fix-eth-name 脚本
     curl -LO "$confhome/fix-eth-name.sh"
     curl -LO "$confhome/fix-eth-name.service"
+    curl -LO "$confhome/install-cloudflared.sh"
+    curl -LO "$confhome/cfd.service"
 
     # 最近 kali initrd 删除了原版 wget
     # 但 initrd 的 busybox wget 又不支持 https
