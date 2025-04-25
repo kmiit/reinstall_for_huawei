@@ -2,6 +2,7 @@
 
 apt-get update
 apt-get install -y ca-certificates curl wget
+update-ca-certificates
 # Add cloudflare gpg key
 mkdir -p --mode=0755 /usr/share/keyrings
 curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
