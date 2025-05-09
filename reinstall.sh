@@ -3,9 +3,9 @@
 # shellcheck disable=SC2086
 
 set -eE
-confhome=https://raw.githubusercontent.com/12189108/reinstall/main
+confhome=https://raw.githubusercontent.com/12189108/reinstall_for_huawei/main
 #confhome_cn=https://cnb.cool/bin456789/reinstall/-/git/raw/main
-confhome_cn=https://gitproxy.click/https://raw.githubusercontent.com/12189108/reinstall/main
+confhome_cn=https://gitproxy.click/https://raw.githubusercontent.com/12189108/reinstall_for_huawei/main
 
 # 默认密码
 DEFAULT_PASSWORD=123@@@
