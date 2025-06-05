@@ -2707,7 +2707,7 @@ install_grub_linux_efi() {
         curl -Lo $tmp/$grub_efi $mirror/releases/$fedora_ver/Everything/$basearch/os/EFI/BOOT/$grub_efi
     else
         if is_in_china; then
-            mirror=https://mirror.nju.edu.cn/opensuse
+            mirror=https://openuse.dockerhub.dev
         else
             mirror=https://downloadcontentcdn.opensuse.org
         fi
