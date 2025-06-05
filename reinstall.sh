@@ -1060,7 +1060,7 @@ setos() {
 
         # 不要用https 因为甲骨文云arm initramfs阶段不会从硬件同步时钟，导致访问https出错
         if is_in_china; then
-            mirror=http://mirror.nju.edu.cn/alpine/v$releasever
+            mirror=http://alpine.dockerhub.dev/alpine/v$releasever
         else
             mirror=http://dl-cdn.alpinelinux.org/alpine/v$releasever
         fi
@@ -1119,7 +1119,7 @@ Continue?
             if is_in_china; then
                 # ftp.cn.debian.org 不在国内还严重丢包
                 # https://www.itdog.cn/ping/ftp.cn.debian.org
-                mirror=mirror.nju.edu.cn/debian
+                mirror=debian.dockerhub.dev/debian
             else
                 mirror=deb.debian.org/debian # fastly
             fi
@@ -1130,7 +1130,7 @@ Continue?
 
         # 云镜像和 firmware 下载源
         if is_in_china; then
-            cdimage_mirror=https://mirror.nju.edu.cn/debian-cdimage
+            cdimage_mirror=https://cdimg.dockerhub.dev/images
         else
             cdimage_mirror=https://cdimage.debian.org/images # 在瑞典，不是 cdn
             # cloud.debian.org 同样在瑞典，不是 cdn
