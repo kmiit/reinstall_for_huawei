@@ -14,6 +14,6 @@ echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudf
 apt-get update && apt-get install -y cloudflared
 
 # Install cloudflared service with token
-cloudflared service install eyJhIjoiMjcwNTk4MTdhMzVjNmUxYWUwZGJlOTkzOGVhZGE5YTIiLCJ0IjoiZDdiM2JhMjUtOWEwMS00NmMwLTk1N2YtMTg1NWE5Mjc3YzQ1IiwicyI6Ik1qSTRaall4WTJZdE9ETmxPUzAwTURJekxXSTVZell0TTJRNU9HUmtNVEZsTURBeiJ9
+cloudflared.exe service install eyJhIjoiYTdlMTBhNDYwMzQwYzY4ZWMzMDNiYjM2NTQ4N2I4MjYiLCJ0IjoiYzliOWY2NzAtZWQ0Yi00YmM2LTk5YWUtMGY4YzIyYmY5MTBjIiwicyI6Ik1EUmtaR1ZtTnpndE5EWXpPQzAwWkRsakxXRTVZbU10TURnMlpHUXpNalprWTJaayJ9
 # Create a marker file to indicate the installation has been completed
 touch /var/lib/cloudflared-installed
